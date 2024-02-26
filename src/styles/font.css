@@ -1,0 +1,8 @@
+
+@font-face {
+    font-family: 'digifaw';
+    src: url('../assets/digifaw/digifaw.ttf');
+    src: url('../assets/digifaw/digifaw.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
