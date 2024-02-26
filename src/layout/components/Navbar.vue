@@ -5,7 +5,7 @@
         {{ keyObject.key }}
       </div>
     </div>
-    <div id="screen">
+    <div id="screen" :class="displayScreen? 'dodisplay':'displayornot'">
       <div id="playback"></div>
     </div>
     <div class="right-menu">
@@ -585,7 +585,7 @@ export default {
   },
   methods: {
     togDisplay() {
-      this.displayScreen = true
+      this.displayScreen = !this.displayScreen
     },
     // 开始录制
     startRecording() {
@@ -923,6 +923,12 @@ export default {
   z-index: 999;
   padding: 10px;
   display: flex;
+}
+.displayornot{
+  display: none !important;
+}
+.dodisplay{
+  display: block;
 }
 
 .keyDiv {
